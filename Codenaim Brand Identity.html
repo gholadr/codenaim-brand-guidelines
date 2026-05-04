@@ -15,23 +15,25 @@
   }
   .gh-link {
     position: fixed;
-    bottom: 16px;
+    top: 16px;
     right: 16px;
-    z-index: 9999;
+    z-index: 2147483647;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.14);
+    padding: 10px 14px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 999px;
-    color: #e6e6e6;
-    font: 500 12px/1 'Inter', system-ui, sans-serif;
+    color: #0a0a0a;
+    font: 600 13px/1 'Inter', system-ui, sans-serif;
+    letter-spacing: 0.01em;
     text-decoration: none;
-    backdrop-filter: blur(8px);
-    transition: background .15s ease, border-color .15s ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+    transition: transform .15s ease, box-shadow .15s ease;
+    transform-origin: top right;
   }
-  .gh-link:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.28); }
+  .gh-link:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.3); }
   .gh-link svg { width: 16px; height: 16px; fill: currentColor; }
 </style>
 </head>

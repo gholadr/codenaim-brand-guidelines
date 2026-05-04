@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Codenaim — Brand Identity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #1a1a1a; }
+  /* Override font stacks so Tiempos/Söhne fall through to Fraunces/Inter */
+  body, body * {
+    --display: 'Fraunces', Georgia, serif;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="codenaim-brand/tokens.jsx"></script>
+<script type="text/babel" src="codenaim-brand/primitives.jsx"></script>
+<script type="text/babel" src="codenaim-brand/logo.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-cover.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-mark.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-color.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-type.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-voice.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-system.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-applications.jsx"></script>
+<script type="text/babel" src="codenaim-brand/artboard-siblings.jsx"></script>
+
+<script type="text/babel">
+  // After fonts load, override display font stack so Fraunces is used
+  const styleOverride = document.createElement('style');
+  styleOverride.textContent = `
+    /* Make sure Fraunces shows up wherever the brand uses 'display' serif */
+  `;
+
+  // Patch the cnFonts.display so that Fraunces leads
+  if (window.cnFonts) {
+    window.cnFonts.display = '"Instrument Serif", Georgia, serif';
+    window.cnFonts.ui = '"Inter", system-ui, sans-serif';
+    window.cnFonts.mono = '"JetBrains Mono", ui-monospace, monospace';
+    window.cnFonts.mark = '"Inter", system-ui, sans-serif';
+  }
+
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "displayFont": "EB Garamond"
+  }/*EDITMODE-END*/;
+
+  const FONT_OPTIONS = {
+    'Instrument Serif': '"Instrument Serif", Georgia, serif',
+    'EB Garamond':      '"EB Garamond", Georgia, serif',
+    'Newsreader':       '"Newsreader", Georgia, serif',
+    'Inter (no serif)': '"Inter", system-ui, sans-serif',
+  };
+
+  const { DesignCanvas, DCSection, DCArtboard, TweaksPanel, TweakSection, TweakRadio, useTweaks } = window;
+
+  function App() {
+    const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+    // Apply font live
+    React.useEffect(() => {
+      window.cnFonts.display = FONT_OPTIONS[tweaks.displayFont] || FONT_OPTIONS['Instrument Serif'];
+    }, [tweaks.displayFont]);
+
+    return (
+      <>
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="Display Font">
+          <TweakRadio
+            value={tweaks.displayFont}
+            onChange={v => setTweak('displayFont', v)}
+            options={Object.keys(FONT_OPTIONS)}
+          />
+        </TweakSection>
+      </TweaksPanel>
+      <DesignCanvas
+        key={tweaks.displayFont}
+        title="Codenaim — Brand Identity"
+        subtitle="Operator-grade brand system. Sibling to Take One."
+      >
+        <DCSection id="overview" title="Cover">
+          <DCArtboard id="cover" label="01 · The Operating Manual" width={1200} height={760}>
+            <window.CnCover />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="mark" title="The Mark">
+          <DCArtboard id="mark-spec" label="02 · Logo System" width={1200} height={900}>
+            <window.CnMarkSpec />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="color" title="Color">
+          <DCArtboard id="color-spec" label="03 · Bone, Ink, Blue" width={1200} height={900}>
+            <window.CnColorSpec />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="type" title="Type">
+          <DCArtboard id="type-spec" label="04 · Three Families" width={1200} height={980}>
+            <window.CnTypeSpec />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="voice" title="Voice">
+          <DCArtboard id="voice-spec" label="05 · Plainspoken Operator" width={1200} height={940}>
+            <window.CnVoiceSpec />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="system" title="System Patterns">
+          <DCArtboard id="system-spec" label="06 · Grammar of the Brand" width={1200} height={920}>
+            <window.CnSystemSpec />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="apps" title="Applications">
+          <DCArtboard id="applications" label="07 · In the World" width={1200} height={1000}>
+            <window.CnApplications />
+          </DCArtboard>
+        </DCSection>
+
+        <DCSection id="siblings" title="Sibling Brands">
+          <DCArtboard id="siblings" label="08 · Codenaim ↔ Take One" width={1200} height={880}>
+            <window.CnSiblings />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+      </>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

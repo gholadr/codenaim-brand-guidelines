@@ -11,7 +11,7 @@ function CnSiblings() {
         <div>
           <window.CnEyebrow style={{ marginBottom: 12 }}>Section 07 — Sibling Brands</window.CnEyebrow>
           <h2 style={{ fontFamily: RF.display, fontSize: 56, lineHeight: 1, fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
-            Codenaim runs the pipeline. <span style={{ fontStyle: 'italic', color: RT.blue }}>Take One</span> is one output.
+            Codenaim runs the pipeline. <span style={{ fontStyle: 'italic', color: RT.accent }}>Take One</span> is one output.
           </h2>
         </div>
         <window.CnMeta items={['CODENAIM', 'BRAND', 'PG. 08']} />
@@ -24,17 +24,17 @@ function CnSiblings() {
           <window.CnMeta items={['Parent · Operator']} color={RT.slateDim} />
           <window.CnLockup size={48} />
           <div style={{ fontFamily: RF.display, fontSize: 32, lineHeight: 1.1, letterSpacing: '-0.015em', marginTop: 8 }}>
-            The <span style={{ fontStyle: 'italic', color: RT.blue }}>operating system.</span>
+            The <span style={{ fontStyle: 'italic', color: RT.accent }}>operating system.</span>
           </div>
           <div style={{ fontFamily: RF.ui, fontSize: 13, lineHeight: 1.55, color: RT.slate }}>
             Quiet. Editorial. Senior. The voice that talks to studios and CMOs.
-            Bone &amp; ink &amp; one good blue.
+            Bone &amp; ink &amp; one good amber.
           </div>
           <div style={{ marginTop: 4, display: 'flex', flexDirection: 'column', gap: 6 }}>
             {[
-              ['Surface', 'Bone #F7F5F1'],
+              ['Surface', 'Bone #FFFFFF'],
               ['Voice', 'Plainspoken · Declarative'],
-              ['Type', 'Tiempos · Söhne · JetBrains Mono'],
+              ['Type', 'Manrope · JetBrains Mono'],
               ['Audience', 'Studios · CMOs · Investors'],
               ['Volume', 'Quiet — gravitas'],
             ].map(([k, v]) => (
@@ -88,7 +88,7 @@ function CnSiblings() {
       }}>
         <window.CnMeta items={['Relationship Rule']} color={RT.bone2} />
         <div style={{ fontFamily: RF.display, fontSize: 17, lineHeight: 1.4, color: RT.bone }}>
-          A Codenaim product locks the wordmark <span style={{ fontStyle: 'italic', color: '#7B9CE0' }}>"a Codenaim system"</span> in mono caps at the footer.
+          A Codenaim product locks the wordmark <span style={{ fontStyle: 'italic', color: '#FFC670' }}>"a Codenaim system"</span> in mono caps at the footer.
           Take One gets to be itself everywhere else.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4 }}>

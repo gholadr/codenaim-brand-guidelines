@@ -64,7 +64,7 @@ function CnSystemSpec() {
             <window.CnVia name="KURT" />
             <window.CnVia name="DAVID" />
             <window.CnVia name="CHRIS" />
-            <window.CnVia name="CODELINK" color={ST.blue} />
+            <window.CnVia name="CODELINK" color={ST.accent} />
           </div>
         </Box>
 
@@ -97,12 +97,12 @@ function CnSystemSpec() {
           </div>
         </Box>
 
-        <Box label="Pull quote · Italic + blue" height={220} dark>
+        <Box label="Pull quote · Italic + amber" height={220} dark>
           <blockquote style={{
             margin: 0, fontFamily: SF.display, fontSize: 26, lineHeight: 1.25,
             color: ST.bone, fontStyle: 'italic', maxWidth: 480,
           }}>
-            "When a client says <span style={{ fontStyle: 'normal', color: '#7B9CE0' }}>'we want to run this ourselves,'</span> the tool graduates into a product."
+            "When a client says <span style={{ fontStyle: 'normal', color: '#FFC670' }}>'we want to run this ourselves,'</span> the tool graduates into a product."
           </blockquote>
         </Box>
       </div>

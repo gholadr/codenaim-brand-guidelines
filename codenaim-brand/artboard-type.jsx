@@ -22,7 +22,7 @@ function CnTypeSpec() {
         <div>
           <window.CnEyebrow style={{ marginBottom: 12 }}>Section 03 — Type</window.CnEyebrow>
           <h2 style={{ fontFamily: YF.display, fontSize: 56, lineHeight: 1, fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
-            A serif. A grotesque. A monospace.
+            One family. Two weights. One monospace.
           </h2>
         </div>
         <window.CnMeta items={['CODENAIM', 'BRAND', 'PG. 04']} />
@@ -31,10 +31,10 @@ function CnTypeSpec() {
       {/* Three families overview */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14 }}>
         <div style={{ padding: 22, border: `1px solid ${YT.rule}`, background: YT.bone }}>
-          <window.CnMeta items={['Display · Serif', '01']} color={YT.slateDim} style={{ marginBottom: 16 }} />
-          <div style={{ fontFamily: YF.display, fontSize: 84, lineHeight: 0.9, letterSpacing: '-0.02em' }}>Aa</div>
+          <window.CnMeta items={['Display · Manrope 800', '01']} color={YT.slateDim} style={{ marginBottom: 16 }} />
+          <div style={{ fontFamily: YF.display, fontSize: 84, lineHeight: 0.9, letterSpacing: '-0.02em', fontWeight: 800 }}>Aa</div>
           <div style={{ marginTop: 16, fontFamily: YF.ui, fontSize: 12, color: YT.slate, lineHeight: 1.5 }}>
-            <strong style={{ color: YT.ink }}>Tiempos Headline</strong> — or GT Sectra, Canela.
+            <strong style={{ color: YT.ink }}>Manrope ExtraBold</strong> — headline weight.
             Editorial, considered, quiet authority.
           </div>
           <div style={{ marginTop: 14, fontFamily: YF.mono, fontSize: 10, letterSpacing: '0.16em', color: YT.slateDim, textTransform: 'uppercase' }}>
@@ -42,10 +42,10 @@ function CnTypeSpec() {
           </div>
         </div>
         <div style={{ padding: 22, border: `1px solid ${YT.rule}`, background: YT.bone }}>
-          <window.CnMeta items={['UI · Grotesque', '02']} color={YT.slateDim} style={{ marginBottom: 16 }} />
+          <window.CnMeta items={['UI · Manrope 500', '02']} color={YT.slateDim} style={{ marginBottom: 16 }} />
           <div style={{ fontFamily: YF.ui, fontSize: 84, lineHeight: 0.9, letterSpacing: '-0.03em', fontWeight: 500 }}>Aa</div>
           <div style={{ marginTop: 16, fontFamily: YF.ui, fontSize: 12, color: YT.slate, lineHeight: 1.5 }}>
-            <strong style={{ color: YT.ink }}>Söhne</strong> — or Inter as fallback.
+            <strong style={{ color: YT.ink }}>Manrope Medium</strong> — Regular for body copy.
             Workmanlike. The voice of the system.
           </div>
           <div style={{ marginTop: 14, fontFamily: YF.mono, fontSize: 10, letterSpacing: '0.16em', color: YT.slateDim, textTransform: 'uppercase' }}>
@@ -75,7 +75,7 @@ function CnTypeSpec() {
           <div style={{ fontFamily: YF.display, fontSize: 48, lineHeight: 1, letterSpacing: '-0.02em' }}>The pipeline is the moat.</div>
         </Row>
         <Row label="H2 · 32/1.1 · italic">
-          <div style={{ fontFamily: YF.display, fontSize: 28, lineHeight: 1.1, fontStyle: 'italic', color: YT.blue }}>Software earns itself.</div>
+          <div style={{ fontFamily: YF.display, fontSize: 28, lineHeight: 1.1, fontStyle: 'italic', color: YT.accent }}>Software earns itself.</div>
         </Row>
         <Row label="Body · 15/1.55">
           <div style={{ fontFamily: YF.ui, fontSize: 15, lineHeight: 1.55, color: YT.slate, maxWidth: 720 }}>

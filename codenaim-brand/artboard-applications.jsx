@@ -49,7 +49,7 @@ function CnApplications() {
             <window.CnMeta items={['◉', 'CODENAIM']} color={AT.bone2} />
             <div style={{ fontFamily: AF.display, fontSize: 26, lineHeight: 1.1, color: AT.bone, letterSpacing: '-0.01em' }}>
               Workflow first.<br />
-              <span style={{ fontStyle: 'italic', color: '#7B9CE0' }}>Software follows.</span>
+              <span style={{ fontStyle: 'italic', color: '#FFC670' }}>Software follows.</span>
             </div>
             <window.CnMeta items={['CODENAIM.COM', 'LOS ANGELES']} color={AT.bone2} />
           </div>
@@ -70,7 +70,7 @@ function CnApplications() {
             <div style={{ fontFamily: AF.mono, fontSize: 10, letterSpacing: '0.08em', color: AT.slateDim, textTransform: 'uppercase' }}>
               anson@codenaim.com · codenaim.com
             </div>
-            <div style={{ marginTop: 6, fontFamily: AF.display, fontSize: 13, fontStyle: 'italic', color: AT.blue }}>
+            <div style={{ marginTop: 6, fontFamily: AF.display, fontSize: 13, fontStyle: 'italic', color: AT.accent }}>
               Workflow first. Software follows.
             </div>
           </div>
@@ -89,14 +89,14 @@ function CnApplications() {
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <window.CnMeta items={[{ text: 'CODENAIM', bold: true }, 'THE PITCH', '02 / 04']} />
-              <window.CnMeta items={['● V 2']} color={AT.blue} />
+              <window.CnMeta items={['● V 2']} color={AT.accent} />
             </div>
             <div>
               <window.CnMeta items={['What We Sell']} color={AT.slateDim} style={{ marginBottom: 14 }} />
               <div style={{ fontFamily: AF.display, fontSize: 56, lineHeight: 0.96, letterSpacing: '-0.025em', maxWidth: 580 }}>
                 Most agencies sell hours.<br />
                 Most AI vendors sell software.<br />
-                <span style={{ fontStyle: 'italic', color: AT.blue }}>We sell outcomes.</span>
+                <span style={{ fontStyle: 'italic', color: AT.accent }}>We sell outcomes.</span>
               </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
@@ -147,7 +147,7 @@ function CnApplications() {
           <window.CnMeta items={['Avatar · Square']} color={AT.slateDim} />
           <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
             <window.CnMark size={88} />
-            <window.CnMark size={56} bg={AT.blue} />
+            <window.CnMark size={56} bg={AT.accent} />
             <window.CnMarkC size={56} />
           </div>
         </div>
@@ -163,7 +163,7 @@ function CnApplications() {
         <div style={{ padding: 22, border: `1px solid ${AT.rule}`, background: AT.ink, color: AT.bone, display: 'flex', flexDirection: 'column', gap: 12 }}>
           <window.CnMeta items={['Social Banner · 1500×500']} color={AT.bone2} />
           <div style={{ fontFamily: AF.display, fontSize: 20, lineHeight: 1.15, color: AT.bone, letterSpacing: '-0.01em' }}>
-            A marketing operating<br />system. <span style={{ fontStyle: 'italic', color: '#7B9CE0' }}>Not a tool.</span>
+            A marketing operating<br />system. <span style={{ fontStyle: 'italic', color: '#FFC670' }}>Not a tool.</span>
           </div>
           <window.CnMeta items={['CODENAIM.COM']} color={AT.bone2} />
         </div>

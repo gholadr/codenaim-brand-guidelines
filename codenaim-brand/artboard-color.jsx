@@ -37,7 +37,7 @@ function CnColorSpec() {
         <div>
           <window.CnEyebrow style={{ marginBottom: 12 }}>Section 02 — Color</window.CnEyebrow>
           <h2 style={{ fontFamily: KF.display, fontSize: 56, lineHeight: 1, fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
-            Bone, ink, and one good blue.
+            Bone, ink, and one good amber.
           </h2>
         </div>
         <window.CnMeta items={['CODENAIM', 'BRAND', 'PG. 03']} />
@@ -50,7 +50,7 @@ function CnColorSpec() {
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1.4fr 1fr', gap: 14 }}>
           <Swatch name="Bone" hex={KT.bone} role="Paper · default surface" />
           <Swatch name="Ink" hex={KT.ink} role="Primary text · brand" />
-          <Swatch name="Deep Blue" hex={KT.blue} role="Accent · the stamp" />
+          <Swatch name="Amber" hex={KT.accent} role="Accent · the stamp" />
         </div>
       </div>
 
@@ -62,7 +62,7 @@ function CnColorSpec() {
           <Swatch name="Slate" hex={KT.slate} role="Secondary text" size="sm" />
           <Swatch name="Slate Dim" hex={KT.slateDim} role="Meta · tertiary" size="sm" />
           <Swatch name="Rule" hex={KT.rule} role="Hairline on bone" size="sm" />
-          <Swatch name="Blue Deep" hex={KT.blueDeep} role="Hover · pressed" size="sm" />
+          <Swatch name="Amber Deep" hex={KT.accentDeep} role="Hover · pressed" size="sm" />
         </div>
       </div>
 
@@ -76,7 +76,7 @@ function CnColorSpec() {
             <window.CnMeta items={['Usage Rules']} color={KT.slateDim} />
             <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 6, fontSize: 11.5, color: KT.slate, lineHeight: 1.45 }}>
               <li>↳ Bone is the default. Ink is the second default. Everything else earns its place.</li>
-              <li>↳ Deep Blue is a stamp, not a fill. One per page, one per slide.</li>
+              <li>↳ Amber is a stamp, not a fill. One per page, one per slide.</li>
               <li>↳ No gradients. No tints below 80%. No drop shadows.</li>
             </ul>
           </div>

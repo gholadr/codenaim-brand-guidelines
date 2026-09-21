@@ -24,7 +24,7 @@ function CnMeta({ items, color, accent, style }) {
 // Section eyebrow — small, capitalized, with leading bullet
 function CnEyebrow({ children, color, dot, style }) {
   const c = color || T.slate;
-  const d = dot ?? T.blue;
+  const d = dot ?? T.accent;
   return (
     <div style={{
       fontFamily: F.mono, fontSize: 11, letterSpacing: '0.22em',

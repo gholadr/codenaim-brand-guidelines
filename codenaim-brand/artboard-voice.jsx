@@ -34,7 +34,7 @@ function CnVoiceSpec() {
         <div>
           <window.CnEyebrow style={{ marginBottom: 12 }}>Section 04 — Voice</window.CnEyebrow>
           <h2 style={{ fontFamily: VF.display, fontSize: 56, lineHeight: 1, fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
-            Plainspoken. Declarative. <span style={{ fontStyle: 'italic', color: VT.blue }}>Operator.</span>
+            Plainspoken. Declarative. <span style={{ fontStyle: 'italic', color: VT.accent }}>Operator.</span>
           </h2>
         </div>
         <window.CnMeta items={['CODENAIM', 'BRAND', 'PG. 05']} />

@@ -45,8 +45,8 @@ function CnMarkSpec() {
         <Pad label="Knockout · Cream" bg={MT.cream}>
           <window.CnMark size={120} fg={MT.ink} bg={MT.cream} square={false} />
         </Pad>
-        <Pad label="Accent · Deep Blue" bg={MT.bone}>
-          <window.CnMark size={120} bg={MT.blue} />
+        <Pad label="Accent · Amber" bg={MT.bone}>
+          <window.CnMark size={120} bg={MT.accent} />
         </Pad>
       </div>
 
@@ -74,7 +74,7 @@ function CnMarkSpec() {
                 {[...Array(13)].map((_, i) => (
                   <line key={'v' + i} x1={i * 4} y1="0" x2={i * 4} y2="48" stroke={MT.rule} strokeWidth="0.15" />
                 ))}
-                <rect x="3" y="3" width="42" height="42" fill="none" stroke={MT.blue} strokeWidth="0.2" strokeDasharray="0.5,0.5" />
+                <rect x="3" y="3" width="42" height="42" fill="none" stroke={MT.accent} strokeWidth="0.2" strokeDasharray="0.5,0.5" />
                 <path d="M 22 11 L 11 11 L 11 37 L 22 37" fill="none" stroke={MT.ink} strokeWidth="3.2" />
                 <path d="M 27 37 L 27 11 L 37 37 L 37 11" fill="none" stroke={MT.ink} strokeWidth="3.2" />
               </svg>

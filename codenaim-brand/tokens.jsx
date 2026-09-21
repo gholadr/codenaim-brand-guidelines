@@ -1,34 +1,35 @@
 // Codenaim brand tokens — single source of truth
+// Aligned to github.com/gholadr/codenaim-corp-site (styles.css)
 const cnTokens = {
   // Surfaces
-  bone: '#F7F5F1',      // primary paper
-  cream: '#ECE8DF',     // secondary surface, dividers
-  bone2: '#EFEBE3',     // hover/inset
+  bone: '#FFFFFF',       // primary paper
+  cream: '#F4F4F4',      // secondary surface, dividers
+  bone2: '#EDEDED',      // hover/inset
   // Ink
-  ink: '#0E1A2B',       // primary text, primary brand
-  inkSoft: '#1A2438',
-  slate: '#33405A',     // secondary text
-  slateDim: '#5A6680',  // tertiary, meta
-  rule: '#D5CFC2',      // hairline rules on bone
-  ruleDark: '#1F2940',  // hairline rules on ink
+  ink: '#0A0A0A',        // primary text, primary brand
+  inkSoft: '#1A1A1A',
+  slate: '#404040',      // secondary text
+  slateDim: '#737373',   // tertiary, meta
+  rule: '#DEDEDE',       // hairline rules on bone
+  ruleDark: '#1F1F1F',   // hairline rules on ink
   // Accent — used sparingly, like a stamp
-  blue: '#1F3A7A',      // signature deep blue
-  blueDeep: '#142657',
-  blueLight: '#3957A8',
+  accent: '#F5A623',      // signature orange-yellow
+  accentDeep: '#C27E10',
+  accentLight: '#FFC670', // for use on dark (ink) surfaces
   // System signals (rare, for state)
   ember: '#B7472A',     // alert/edit/red-pencil
   moss:  '#3C5A3C',     // approved
 };
 
 const cnFonts = {
-  // Display serif — gravitas, editorial
-  display: '"Tiempos Headline", "GT Sectra", "Canela", "Romana", Georgia, serif',
+  // Display — same family as UI, set at heavier weight for gravitas
+  display: '"Manrope", system-ui, -apple-system, "Helvetica Neue", sans-serif',
   // Body grotesque — utility
-  ui: '"Söhne", "Inter", "Helvetica Neue", system-ui, sans-serif',
+  ui: '"Manrope", system-ui, -apple-system, "Helvetica Neue", sans-serif',
   // Monospace — system tags, metadata, code
   mono: '"JetBrains Mono", "Berkeley Mono", "IBM Plex Mono", ui-monospace, monospace',
-  // Wordmark — geometric grotesque, slightly condensed
-  mark: '"GT America Condensed", "Söhne Breit", "Inter", sans-serif',
+  // Wordmark — same grotesque, bold and tight
+  mark: '"Manrope", system-ui, -apple-system, "Helvetica Neue", sans-serif',
 };
 
 window.cnTokens = cnTokens;

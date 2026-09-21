@@ -55,7 +55,7 @@ function CnCover() {
             }}>
               Workflow<br />
               first.<br />
-              <span style={{ fontStyle: 'italic', color: CT.blue }}>Software</span><br />
+              <span style={{ fontStyle: 'italic', color: CT.accent }}>Software</span><br />
               follows.
             </h1>
           </div>
